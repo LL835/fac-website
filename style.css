@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: #121212
+}
+
+/* navbar */
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    padding: 25px 35px;
+    gap: 40px;
+    font-size: 1.1rem;
+    color: #A9C52F
+}
+
+/* hero */
+
+#hero {
+    padding: 1rem 1rem;
+}
+
+.hero-text {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8rem; 
+    color: #4F8A8B;
+}
+
+.red-for-emphasis {
+    font-family: 'Bebas Neue', cursive;
+    color: #ab1725
+}
+
+.sub-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem; 
+    color: #4F8A8B;
+}
+
+.github-button {
+    cursor: pointer;
+    background: none;
+    border: solid 3px #A9C52F;
+    color: #A9C52F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin: 50px 0;
+    padding: 10px 30px;
+
+}
