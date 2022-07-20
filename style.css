@@ -7,22 +7,37 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     font-family: 'Montserrat', sans-serif;
     background: #121212
 }
 
 /* navbar */
 
+.page-header {
+    position: sticky;
+    top: 0;
+    background: #EEE;
+    z-index: 3;
+}
+
 .navbar {
     list-style: none;
     display: flex;
     gap: 30px;
     justify-content: flex-end;
-    padding: 25px 35px;
+    padding: 15px 35px;
     gap: 40px;
     font-size: 1.1rem;
-    color: #A9C52F
+}
+
+.navbar-item a{
+    color: #121212;
+    text-decoration: none;
+}
+
+.navbar-item a:hover {
+    color: #AB1725
 }
 
 /* hero */
@@ -215,7 +230,7 @@ body {
 
 }
 
-a:hover{
+.slide a:hover{
     background: rgb(0, 0, 0, 0.9);
     color:#4F8A8B
 }
