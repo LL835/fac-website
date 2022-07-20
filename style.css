@@ -73,7 +73,7 @@ body {
 
 }
 
-.section-title {
+#about-me .section-title {
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
     font-size: 3rem; 
@@ -141,4 +141,129 @@ body {
     .about-me-container {
         flex-direction: column;
     }
+}
+
+/* projects */
+
+#projects {
+    padding: 1rem 1rem;
+
+}
+
+#projects .section-title {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 3rem; 
+    color:#A9C52F;
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: right;
+}
+
+.section-sub-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color:#4F8A8B;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.project-carousel {
+    position: relative;
+    max-width: 780px;
+    height: 482px;
+    margin: 0 auto;
+}
+.slides {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    display: none;
+}
+
+.slide[data-active-slide] {
+    display: block;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-title {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+    position: absolute;
+    bottom: 0;
+    background:rgb(0, 0, 0, 0.7);
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    color: #BBB;
+    text-underline-offset: 4px;
+
+}
+
+a:hover{
+    background: rgb(0, 0, 0, 0.9);
+    color:#4F8A8B
+}
+
+.next-slide, .previous-slide {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(0, 0, 0, 0.7);
+    border: none;
+    color: #BBB;
+    font-size: 6rem;
+    cursor: pointer;
+    padding: 0px 10px 8px;
+}
+
+.next-slide:hover, .previous-slide:hover {
+    color: #4F8A8B;
+    background: rgb(0, 0, 0, 0.9);
+
+}
+
+.next-slide {
+    right: 0rem;
+}
+
+.previous-slide {
+    left: 0rem;
+
+}
+
+.slide-tracker {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide-indicator {
+    padding: 4px;
+    border-radius: 50%;
+    background: #575a5a;
+    border: solid 1px #575a5a;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.slide-indicator[data-active-indicator] {
+    background: #4F8A8B;
+    border: solid 1px #4F8A8B;
 }
