@@ -7,9 +7,9 @@
 
 body {
     width: 100vw;
-    height: auto;
+    min-height: auto;
     font-family: 'Montserrat', sans-serif;
-    background: #121212
+    background: #121212;
 }
 
 /* navbar */
@@ -139,6 +139,7 @@ body {
     text-justify: inter-word;
     font-size: 1.1rem;
     transition: opacity 0.2s ease-in-out;
+    overflow: hidden; /* set this to stop the empty space beneath the footer */
 }
 
 .active-tab-content {
@@ -162,7 +163,7 @@ body {
 
 #projects {
     padding: 1rem 1rem;
-    min-height: 800px
+    min-height: 800px;
 
 }
 
@@ -327,5 +328,17 @@ body {
 
 .grid-item-title:hover {
     background: rgb(0, 0, 0, 0.9);
-    color:#4F8A8B
+    color:#4F8A8B;
+}
+
+/* footer */
+.page-footer {
+    position: sticky;
+    bottom: 0;
+    background: #EEE;
+    padding: 15px 35px;
+    margin-top: 15px;
+    text-align: right;
+    margin-bottom: -510px
+
 }
