@@ -27,7 +27,7 @@ body {
 
 /* hero */
 
-#hero {
+#home {
     padding: 1rem 1rem;
 }
 
@@ -147,6 +147,7 @@ body {
 
 #projects {
     padding: 1rem 1rem;
+    min-height: 800px
 
 }
 
@@ -266,4 +267,50 @@ a:hover{
 .slide-indicator[data-active-indicator] {
     background: #4F8A8B;
     border: solid 1px #4F8A8B;
+}
+
+.section-sub-title[data-sub-title="other-projects"]{
+    margin-top: 50px;
+}
+
+.other-projects-grid {
+    display: grid;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    row-gap: 20px;
+}
+
+.grid-item {
+    display: grid;
+
+}
+
+.grid-item > * {
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+
+.grid-item-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+.grid-item-title {
+    background:rgb(0, 0, 0, 0.7);
+    align-self: end;
+    padding: 0.65rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #BBB;
+    font-size: 1.3rem;
+    text-underline-offset: 4px;
+}
+
+.grid-item-title:hover {
+    background: rgb(0, 0, 0, 0.9);
+    color:#4F8A8B
 }
