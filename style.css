@@ -290,7 +290,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    row-gap: 20px;
 }
 
 .grid-item {
