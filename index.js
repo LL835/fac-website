@@ -18,7 +18,6 @@ function changeTabs(tab){
     // re-apply the active status to the tab that was clicked only
     tab.classList.add("active-tab")
     newTab.classList.add("active-tab-content");
-
 }
 
 // change slides when user clicks the next slide button
@@ -79,6 +78,5 @@ function changeSlidesViaIndicators(indicatorClicked){
     delete activeSlide.dataset.activeSlide; // remove the active status from the current indicator
     slidesArray[newIndicatorIndex].dataset.activeSlide = "true"; // apply the active status to the slide corresponding to the new index number
     indicatorArray[newIndicatorIndex].dataset.activeIndicator = "true"; // apply the active status to the indicator that was clicked
-
 }
 

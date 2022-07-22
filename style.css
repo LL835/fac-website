@@ -85,7 +85,6 @@ body {
 
 #about-me {
     padding: 1rem 1rem;
-
 }
 
 #about-me .section-title {
@@ -129,7 +128,6 @@ body {
 .active-tab {
     color: #4F8A8B;
     border: solid 3px #4F8A8B;
-
 }
 
 .tab-content{
@@ -164,7 +162,6 @@ body {
 #projects {
     padding: 1rem 1rem;
     min-height: 800px;
-
 }
 
 #projects .section-title {
@@ -192,6 +189,7 @@ body {
     height: 482px;
     margin: 0 auto;
 }
+
 .slides {
     list-style: none;
     width: 100%;
@@ -228,7 +226,6 @@ body {
     text-align: center;
     color: #BBB;
     text-underline-offset: 4px;
-
 }
 
 .slide a:hover{
@@ -252,7 +249,6 @@ body {
 .next-slide:hover, .previous-slide:hover {
     color: #4F8A8B;
     background: rgb(0, 0, 0, 0.9);
-
 }
 
 .next-slide {
@@ -261,7 +257,6 @@ body {
 
 .previous-slide {
     left: 0rem;
-
 }
 
 .slide-tracker {
@@ -300,7 +295,6 @@ body {
 
 .grid-item {
     display: grid;
-
 }
 
 .grid-item > * {
@@ -340,5 +334,4 @@ body {
     margin-top: 15px;
     text-align: right;
     margin-bottom: -510px
-
 }
