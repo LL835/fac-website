@@ -299,7 +299,6 @@ body {
 .grid-item > * {
     grid-row: 1/2;
     grid-column: 1/2;
-
 }
 
 .grid-item-image {
@@ -332,5 +331,4 @@ body {
     padding: 15px 35px;
     margin-top: 15px;
     text-align: right;
-    margin-bottom: -510px
 }
