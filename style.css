@@ -298,6 +298,7 @@ body {
 
 .grid-item {
     display: grid;
+    width: 100%; /* fixes grid-item size issue on Safari. Works fine in Chrome/Firefox without this */
 }
 
 .grid-item > * {
@@ -320,6 +321,7 @@ body {
     color: #BBB;
     font-size: 1.3rem;
     text-underline-offset: 4px;
+    z-index: 2; /* makes the hover efect work in Safari. Works fine in Chrome/Firefox without this*/
 }
 
 .grid-item-title:hover {
