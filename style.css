@@ -15,7 +15,8 @@ body {
 /* navbar */
 
 .page-header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     background: #EEE;
     z-index: 3;
