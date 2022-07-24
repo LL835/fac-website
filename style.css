@@ -44,11 +44,15 @@ body {
 
 #home {
     padding: 1rem 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero-text {
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .title {
@@ -99,7 +103,6 @@ body {
 
 .about-me-container {
     max-width: 1200px;
-    min-height: 400px;
     margin: 0 auto;
     display: flex;
     color: #BBB;
