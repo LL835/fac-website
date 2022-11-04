@@ -1,124 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="description" content="LL835's application for Founders and Coders">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
-    <title>LL835</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">    
-</head>
-<body>
-    <header class="page-header">
-        <nav>
-            <ul class="navbar">
-                <li class="navbar-item"><a href="#home">Home</a></li>
-                <li class="navbar-item"><a href="#about-me">About me</a></li>
-                <li class="navbar-item"><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id ="home">
-        <div class="hero-text">
-            <h1 class="title">Hi, I'm <span class="red-for-emphasis">Derek</span>.</h1>
-            <h2 class="sub-title">I'm an aspiring web developer.</h2>
-            <a href="https://github.com/LL835" target="_blank"><button class="github-button">My GitHub</button></a>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+        <title>Derek Lo &#124; Software Developer</title>
+    </head>
+    <body class="v-spacing-md">
+        <section class="hero">
+            <div class="image-wrapper">            
+                <img src="./images/pfp1.png" class="hero-image">    
+            </div>
+            <div class="hero-content v-spacing-md">
+                <h1 class="hero-title">Hey there!</h1>
+                <p class="hero-sub-title">My name's Derek (he/him), and I'm a beginner software developer. I like problem-solving and designing beautiful websites.</p>
+                <ul class="hero-buttons h-spacing-md">
+                    <li class="hero-link"><a href="#" class="my-work-btn">view work <span>&#187;</span></a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="about-grid">
+            <section class="background v-spacing-md">
+                <h2 class="section-title">My Journey So Far</h2>
+                <p class="text">I studied law at university, and after graduating in 2019 I started working in the editorial department of a legal publishing website in London as an assistant editor. This involved working closely with the web production team which inspired me to study web development.</p>
+                <p class="text">I began with self-teaching Python and then started learning HTML, CSS, and Javascript too. Earlier this year, I joined the Founders and Coders skills bootcamp where I am currently training to become a full-stack developer. </p>
+            </section>
+            <section class="skills-and-interests v-spacing-md">
+                <h2 class="section-title">Skills & Interests</h2>
+                <span class="item text wiggle">HTML</span>
+                <span class="item text wiggle">CSS</span>
+                <span class="item text wiggle">Javascript</span>
+                <span class="item text wiggle">Python</span>
+                <span class="item text wiggle">UX design</span>
+                <span class="item text wiggle">UI design</span>
+                <span class="item text wiggle">Web accessibility</span>
+                <span class="item text wiggle">Wireframing</span>
+                <span class="item text wiggle">Front-end</span>
+                <span class="item text wiggle">Back-end</span>
+                <span class="item text wiggle">QA testing</span>
+
+            </section>
+            <section class="socials">
+                <h2 class="section-title">Contact</h2>
+                <ul class="hero-buttons h-spacing-md">
+                    <li class="hero-link"><a href="https://github.com/LL835" target="_blank" class="social-media"><i class="wiggle fa-brands fa-github"></i></a></li>
+                    <li class="hero-link"><a href="https://www.linkedin.com/in/derek-lo-ltl" target="_blank" class="social-media"><i class="wiggle fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </section>
         </div>
-    </section>
-    <section id="about-me">
-        <h3 class="section-title">About me</h3>
-        <div class="about-me-container">
-            <div class="tabs">
-                <button class="tab active-tab" data-tab-content-id="#background">Background</button>
-                <button class="tab" data-tab-content-id="#why-wd">Why web development?</button>
-                <button class="tab" data-tab-content-id="#why-fac">Why Founders and Coders?</button>
-            </div>
-            <div class="tab-contents">
-                <div class="tab-content active-tab-content" id="background">
-                    <h3 class="tab-content-heading">Background</h3>
-                    <p class="tab-content-text">My name’s Derek, and I graduated in 2019 with a degree in Law with American Legal Studies. I’m currently working in the editorial department of a legal publishing company in London. My responsibilities include copy editing and publishing digital content on the company's website. 
-                    </p><br>
-                    <p>Outside of work, I like to code. I am currently learning Python, HTML, CSS, and Javascript with the ultimate goal of becoming a full-stack web developer. I’m interested in art and design and spend a lot of my free time sketching characters. I also like reading and reality TV.</p>
+        <section class="featured-work v-spacing-md">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="work-grid">
+
+                <div class="prj v-spacing-lg" tabindex="0">
+                    <div class="prj-img-wrapper">
+                        <img src="./images/gif-tionary.png" alt="">
+                    </div>
+                    <h3 class="prj-name">gif-tionary</h3>
+                    <ul class="view-options-list h-spacing-md">
+                        <li>
+                            <a href="https://fac26.github.io/gif-tionary/" target="_blank"><i class="fa-solid fa-up-right-from-square wiggle"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/fac26/gif-tionary " target="_blank"><i class="fa-brands fa-github wiggle"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="tab-content" id="why-wd">
-                    <h3 class="tab-content-heading">Why web development?</h3>
-                    <p class="tab-content-text">I decided to pick up coding as a hobby because I really wanted to learn a new skill. Coding felt like the right choice because I had dabbled in it before when I was in school and really enjoyed it. It also seemed like a really practical choice given how technology-driven the workplace is, and I thought it might come in handy at some point. Now, having practised for several months, I'm ready to take the next step and start working towards a career in web development.</p><br>
-                    <p class="tab-content-text">What I like most about web development is that it requires creativity and problem-solving. Being able to build something from scratch and say “hey, look at what I made!” is really rewarding. I also really like designing websites, and I often spend a lot of time playing with layout, colours, and fonts.</p>
+
+                <div class="prj v-spacing-lg">
+                    <div class="prj-img-wrapper">
+                        <img src="./images/calc.png" alt="">
+                    </div>
+                    <h3 class="prj-name">Calculator</h3>
+                    <ul class="view-options-list h-spacing-md">
+                        <li>
+                            <a href="https://ll835.github.io/calculator/" target="_blank"><i class="fa-solid fa-up-right-from-square wiggle"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/LL835/calculator" target="_blank"><i class="fa-brands fa-github wiggle"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="tab-content" id="why-fac">
-                    <h3 class="tab-content-heading">Why Founders and Coders?</h3>
-                    <p class="tab-content-text">Because even though I like self-learning, it can also be really overwhelming at times. Going to a bootcamp where I can learn from others in a dedicated training environment is exactly what I need to jump-start my career change. The fact that there’s the possibility of coming out of the process with an apprenticeship is definitely a plus too.
-                    </p>
+                <div class="prj v-spacing-lg">
+                    <div class="prj-img-wrapper">
+                        <img src="./images/clr-palette.png" alt="">
+                    </div>
+                    <h3 class="prj-name">Colour palette builder</h3>
+                    <ul class="view-options-list h-spacing-md">
+                        <li>
+                            <a href="https://ll835.github.io/fac-colour-generator/" target="_blank"><i class="fa-solid fa-up-right-from-square wiggle"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/LL835/fac-colour-generator" target="_blank"><i class="fa-brands fa-github wiggle"></i></a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-        <h3 class="section-title">Projects</h3>
-        <h4 class="section-sub-title">Application Projects</h4>
-        <div class="project-carousel">
-            <button class="carousel-button previous-slide">&#8249;</button>
-            <button class="carousel-button next-slide">&#8250;</button>
-            <ul class="slides">
-                <li class="slide" data-active-slide="true">
-                    <img src="./images/tribute-page.png" alt="Tribute page project" class="slide-image">
-                    <a class="slide-title" href="https://github.com/LL835/fac-tribute-page" target="_blank">Tribute page</a>
-                </li>
-                <li class="slide">
-                    <img src="./images/project-gallery.png" alt="Project gallery project" class="slide-image">
-                    <a class="slide-title" href="https://github.com/LL835/fac-project-gallery" target="_blank">Project gallery</a>
-                </li>
-                <li class="slide">
-                    <img src="./images/comment-box.png" alt="Comment box project" class="slide-image">
-                    <a class="slide-title" href="https://github.com/LL835/fac-comment-box" target="_blank">Comment box</a>
-                </li>
-                <li class="slide">
-                    <img src="./images/fruit-shop.png" alt="Fruit shop project" class="slide-image">
-                    <a class="slide-title" href="https://github.com/LL835/fac-fruit-shop" target="_blank">Fruit shop</a>
-                </li>
-                <li class="slide">
-                    <img src="./images/colour-generator.png" alt="Colour palette generator project" class="slide-image">
-                    <a class="slide-title" href="https://github.com/LL835/fac-colour-generator" target="_blank">Feature</a>
-                </li>
-            </ul>
-            <div class="slide-tracker">
-                <div class="slide-indicators">
-                    <button class="slide-indicator" data-active-indicator ="true"></button>
-                    <button class="slide-indicator"></button>
-                    <button class="slide-indicator"></button>
-                    <button class="slide-indicator"></button>
-                    <button class="slide-indicator"></button>
+
+                <div class="prj v-spacing-lg">
+                    <div class="prj-img-wrapper">
+                        <img src="./images/com-box.png" alt="">
+                    </div>
+                    <h3 class="prj-name">Comment box</h3>
+                    <ul class="view-options-list h-spacing-md">
+                        <li>
+                            <a href="https://ll835.github.io/fac-comment-box/" target="_blank"><i class="fa-solid fa-up-right-from-square wiggle"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/LL835/fac-comment-box" target="_blank"><i class="fa-brands fa-github wiggle"></i></a>
+                        </li>
+                    </ul>
                 </div>
+
             </div>
-        </div>
-        <h4 class="section-sub-title" data-sub-title="other-projects">Other Projects</h4>
-        <div class="other-projects-grid">
-            <div class="grid-item">
-                <img class="grid-item-image" src="./images/landing-page.png" alt="Landing page project">
-                <a href="https://github.com/LL835/odin-landing-page" target="_blank" class="grid-item-title">Landing page</a>
-            </div>
-            <div class="grid-item">
-                <img class="grid-item-image" src="./images/rock-paper-scissors.png" alt="Rock paper scissors project">
-                <a href="https://github.com/LL835/rock-paper-scissors" target="_blank" class="grid-item-title">Rock paper scissors</a>
-            </div>
-            <div class="grid-item">
-                <img class="grid-item-image" src="./images/nought-and-crosses.png" alt="Noughts and crosses project">
-                <a href="https://github.com/LL835/noughts-and-crosses" target="_blank" class="grid-item-title">Noughts and crosses</a>
-            </div>
-            <div class="grid-item">
-                <img class="grid-item-image" src="./images/etch-a-sketch.png" alt="Etch-a-sketch project">
-                <a href="https://github.com/LL835/etch-a-sketch" target="_blank" class="grid-item-title">Etch-a-sketch</a>
-            </div>
-            <div class="grid-item">
-                <img class="grid-item-image" src="./images/calculator.png" alt="Calculator project">
-                <a href="https://github.com/LL835/calculator" target="_blank" class="grid-item-title">Calculator</a>
-        </div>
-    </section>
-    <footer>
-        <div class="page-footer">View this page's code on <a href="https://github.com/LL835/fac-website" target="_blank">GitHub</a></div>
-    </footer>
-</body>
+        </section>
+    </body>
 </html>
