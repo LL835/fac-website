@@ -144,17 +144,25 @@ body {
 }
 .hero-image {
     border-radius: 68% 32% 51% 49% / 48% 32% 68% 52% ;
-    background-color: var(--clr-1);
-    background-image: linear-gradient(60deg, var(--clr-3) , var(--clr-2) 50%, var(--clr-3));
+    /* background-color: var(--clr-1); */
+    background-image: linear-gradient(135deg, var(--clr-3) , var(--clr-2), var(--clr-1));
+    background-size: 500%;
+    animation: bg-gradient-animation 30s infinite alternate;
     width: 100%;
     height: auto;
     object-fit: cover;
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
-    /* box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05) */
     flex-shrink: 1;
-    /* min-width: none; */
-
 }
+@keyframes bg-gradient-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
 @media all and (min-width: 768px){
     .hero {
         flex-direction: row;
@@ -260,24 +268,6 @@ body {
         font-size: 1.5rem;
     }
 }
-/* .featured-work {
-    max-width: 1488px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.projects-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.card {
-    width: 100%;
-    position: relative;
-}
-.card img {
-    width: 100%;
-    border-radius: 1rem;
-    overflow: hidden;
-} */
 .featured-work {
     max-width: 1488px;
     margin-left: auto;
@@ -299,18 +289,6 @@ body {
     height: auto;
     position: relative;
 }
-/* .prj-img-wrapper::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    background-image: linear-gradient(135deg, var(--clr-3) , var(--clr-2) 50%, var(--clr-3));
-    opacity: 50%;
-    border-radius: 1rem;
-    overflow: hidden;
-} */
 .prj-img-wrapper img {
     width: 100%;
     height: 100%;
@@ -323,11 +301,6 @@ body {
     font-size: 1.5rem;
     color: #FFF;
     text-align: center;
-
-    /* background-image: linear-gradient(60deg, var(--clr-3) , var(--clr-2), var(--clr-3));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; */
 }
 .view-options-list {
     list-style: none;
