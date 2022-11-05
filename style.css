@@ -14,14 +14,19 @@
     --clr-4: #000000; 
     --clr-5: #1A1B1F; */
 
-    --font-family-titles: 'Amatic SC', sans-serif; 
+    /* --font-family-titles: 'Amatic SC', sans-serif; 
     --font-family-paras: 'Josefin Sans', sans-serif;
     --bg-clr: #1F2227;
     --section-bg-clr: #1A1D21;
-    /* --clr-1: #DFBA5D; */
     --clr-1: #9171f0;
     --clr-2: #F64C72;
-    --clr-3: #3500D3;
+    --clr-3: #3500D3; */
+
+    --font-family-titles: 'Playfair Display', serif; 
+    --font-family-paras: 'Josefin Sans', sans-serif;
+    --bg-clr: #FFFFFF;
+    --clr-1: #1A1A1A;
+    --clr-2: #A1E5EE;
 }
 * {
     padding: 0;
@@ -56,9 +61,6 @@ body {
     gap: 30px;
     place-items: center;
     padding: 1rem;
-    background-color: var(--section-bg-clr);
-    border-radius: 1rem;
-    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.05);
     min-height: 65%;
     max-width: 1488px;
     margin: 0 auto;
@@ -69,11 +71,6 @@ body {
     color: var(--clr-1);
     text-align: center;
     letter-spacing: 0.3rem;
-    /* text-shadow: 3px 3px rgb(0, 0, 0, 0.35); */
-    color: transparent;
-    background-image: linear-gradient(60deg, var(--clr-3) , var(--clr-2) 50%, var(--clr-3));
-    -webkit-background-clip: text;
-    background-clip: text;
 }
 .hero-sub-title {
     font-family: var(--font-family-paras);
@@ -109,15 +106,15 @@ body {
 }
 .my-work-btn:hover, .my-work-btn:focus {
     padding-right: 20px;
-    color: #FFF;
-    border-color: #FFF;
+    color: var(--clr-2);
+    border-color: var(--clr-2);
 }
 .my-work-btn span {
     position: absolute;
     opacity: 0;
     right: 0;
     transition: all ease-in-out 500ms;
-    color: #FFF;
+    color: var(--clr-2);
 }
 .my-work-btn:hover span, .my-work-btn:focus span {
     opacity: 1;
@@ -138,29 +135,16 @@ body {
 }
 .image-wrapper {
     flex-basis: 100%;
-    max-width: 550px;
+    max-width: 450px;
 }
 .hero-image {
-    border-radius: 68% 32% 51% 49% / 48% 32% 68% 52% ;
-    /* background-color: var(--clr-1); */
-    background-image: linear-gradient(135deg, var(--clr-3) , var(--clr-2), var(--clr-1));
-    background-size: 500%;
-    animation: bg-gradient-animation 30s infinite alternate;
     width: 100%;
     height: auto;
     object-fit: cover;
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
     flex-shrink: 1;
+    border-radius: 1rem;
 }
-@keyframes bg-gradient-animation {
-    0% {
-        background-position: left;
-    }
-    100% {
-        background-position: right;
-    }
-}
-
 @media all and (min-width: 768px){
     .hero {
         flex-direction: row;
@@ -206,9 +190,6 @@ body {
 }
 .skills-and-interests, .background, .socials, .featured-work {
     padding: 1rem;
-    background-color: var(--section-bg-clr);
-    border-radius: 1rem;
-    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.05);
     color: var(--clr-1)
 }
 .background {
@@ -240,10 +221,7 @@ body {
 .section-title {
     font-family: var(--font-family-titles);
     font-size: 2rem;
-    color: transparent;
-    background-image: linear-gradient(60deg, var(--clr-3) , var(--clr-2) 50%, var(--clr-3));
-    -webkit-background-clip: text;
-    background-clip: text;
+    color: var(--clr-1);
     text-align: left;
 }
 .text {
@@ -293,11 +271,12 @@ body {
     border-radius: 1rem;
     object-fit: cover;
     overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 .prj-name {
     font-family: var(--font-family-paras);
     font-size: 1.5rem;
-    color: #FFF;
+    color: var(--clr-1);
     text-align: center;
 }
 .view-options-list {
@@ -312,7 +291,7 @@ body {
     color: var(--clr-1);
 }
 .fa-brands:hover, .fa-solid:hover, .view-options-list a:focus, .social-media:focus, .view-options-list a:focus .wiggle{
-    color: #FFFFFF;
+    color: var(--clr-2);
     outline: none;
     animation: wiggle 300ms infinite;
 }
