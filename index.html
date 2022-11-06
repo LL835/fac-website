@@ -11,19 +11,29 @@
         <link rel="icon" type="image/x-icon" href="./images/icon.ico">    
     </head>
     <body class="v-spacing-md">
-        <section class="hero">
+        <header>
+            <button class="toggle-navbar"><i class="fa-solid fa-bars"></i></button>
+            <nav class="navbar">
+                <ul class="navbar-links" data-visible="false">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about-grid">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero" id="hero">
             <div class="image-wrapper">            
                 <img src="./images/placeholder.jpg" alt = "Derek" class="hero-image">    
             </div>
             <div class="hero-content v-spacing-md">
-                <h1 class="hero-title">Hey there!</h1>
+                <h1 class="hero-title">Hi there!</h1>
                 <p class="hero-sub-title">My name's Derek (he/him). I'm a beginner software developer, and I like problem-solving and designing websites.</p>
                 <ul class="hero-buttons h-spacing-md">
                     <li class="hero-link"><a href="#work" class="my-work-btn">view work <span>&#187;</span></a></li>
                 </ul>
             </div>
         </section>
-        <div class="about-grid">
+        <div class="about-grid" id="about-grid">
             <section class="background v-spacing-md">
                 <h2 class="section-title">My Journey So Far</h2>
                 <p class="text">I studied law at university, and after graduating in 2019 I started working in the editorial department of a legal publishing website in London as an assistant editor. This involved working closely with the web production team which inspired me to study web development.</p>
