@@ -1,9 +1,16 @@
-# fac-website
-A website about me and why I want to pursue web development as a career. It provides some info about me and my motivations and showcases some of the projects that I have been working on. 
+# LL835's website
 
-This project is part of the Founders and Coders application process. Requirements of the project were as follows:
+## Overview
+A website that was originally submitted as part of my application for the Founders and Coders skills bootcamp. It gives an overview of my journey into software development and showcases some of the projects that I have built so far.
+![Screenshot 2022-11-09 at 22 25 15](https://user-images.githubusercontent.com/104517597/200955266-6bdb7bfa-1771-447f-98f0-1e48dcff23b3.png)
+## What I learned
+During this project, I learned how to:
+- Plan, layout, and style different features of a website.
+- Plan a workflow for building a website.
+- Break a website into distinct sections to build.
+- Animate HTML elements with CSS.
 
-* The website must have semantic HTML5 elements
-* The website must use CSS grid or flexbox layout (or both)
-* The website has DOM event listeners for user interaction (e.g. click, keydown)
-* DOM updates are made in response to user interaction (e.g. showing/hiding an element, changing text or styles)
+## View project
+Check out the website [here](https://ll835.github.io/my-profile/).
+
+## 
